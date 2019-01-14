@@ -1,0 +1,260 @@
+﻿@{
+  ViewBag.Title = "Home";
+}
+
+<header class="masthead">
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-lead-in">Welcome To My Website!</div>
+      <div>
+        <img class="rounded-circle img-fluid" src="@Url.Content("/img/face.jpg")" alt="">
+        <div class="intro-lead-in">Raffaele Velotti</div>
+      </div>
+      <div class="intro-heading">.Net / Angular Developer</div>
+    </div>
+  </div>
+</header>
+
+<section style="color: #fff; background-color: #0f314c;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <h4 class="service-heading text-uppercase">Information</h4>
+        <br>
+        <ul class="list-inline">
+          <li>Name: &nbsp&nbsp Raffaele Velotti</li>
+          <br>
+          <li>Date of birth: &nbsp&nbsp 17 November 1994</li>
+          <br>
+          <li>Nationality: &nbsp&nbsp Italy</li>
+          <br>          
+          <li>Email: &nbsp&nbsp <a href="mailto:canticchiando456@gmail.com">canticchiando456@gmail.com</a></li>
+        </ul>
+
+      </div>
+      <div class="col-md-7">
+        <h4 class="service-heading text-uppercase">Profile</h4>
+        <p>
+            I’m a graduate with 3 years’ experience in the computer science from the University of Trieste.
+        </p>
+        <p>
+            My university bachelor in computer science and old coding experience gave me an excellent of skills in ASP.NET,  ASP.NET core, SQL Server, and Angular.
+        </p>
+        <p> My skills are following down.</p>
+        <ul>
+            <li>5+ years experience in .Net with C#, ASP.NET, Entity Framework, LINQ</li>
+            <li>2 years experience in .Net Core with C#, ASP.Net Core, EF Core, LINQ</li>
+            <li>5+ years of web client technologies in Anglular, Bootstrap, CSS, jQuery, HTML</li>
+            <li>relational database design and experience in MSSQL Server, MySQL, SQLite</li>
+            <li>experience in WCF, Microsoft Azure</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- /.section -->
+<section class="bg-light" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Portfolio</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-6x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="@Url.Content("/img/portfolio/01-thumbnail.png")" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>IEPREPORTS</h4>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-6x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="@Url.Content("/img/portfolio/02-thumbnail.png")" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Peer2utor</h4>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-6x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="@Url.Content("/img/portfolio/03-thumbnail.png")" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Lorule</h4>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-6x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="@Url.Content("/img/portfolio/04-thumbnail.png")" alt="">
+        </a>
+        <div class="portfolio-caption">
+            <h4>FirebyWire Designer</h4>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+<div style="text-align:center">
+  <a class="btn btn-danger navbar-toggler-right" @Html.ActionLink("About", "Index", "About")
+</div>
+<!-- Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">IEPREPORTS</h2>
+                <br>
+                <img class="img-fluid d-block mx-auto" src="@Url.Content("/img/portfolio/01-full.png")" alt="">
+                <p>
+                    IEP Reports was developed for Special Educators as an IEP Management Tool that includes Automatic Email Reminders to Teachers,
+                    an IEP Review System, and a Reporting Service that will help teachers and administrators stay on top of district deadlines.
+                </p>
+                <p>
+                    It is built with ASP.Net MVC, jQuery, SignalR, IIS, Entity Framework
+                </p>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">Peer2utor</h2>  <br>
+              <img class="img-fluid d-block mx-auto" src="@Url.Content("/img/portfolio/02-full.png")" alt="">
+              <p>
+                  Peer2utor's unique matching algorithm guarantees you the perfect tutor from across the nation. It is standard based on online tutoring.
+              </p>
+              <p>
+                  It is built with ASP.Net MVC, Ajax, jQuery, IIS Service, MSSQL Sever 2008
+              </p>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">Lorule</h2><br>
+              <img class="img-fluid d-block mx-auto" src="@Url.Content("/img/portfolio/03-full.png")" alt="">
+              <p>
+                 Lorule is a free to play Dark Ages Server. Game content for this server is still being added.
+              </p>
+               <p>
+                   Server is built with C# .NET Core 2.0 and Client game is built with .NET Framework 4.5
+               </p>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">FirebyWire Designer</h2> <br>
+              <img class="img-fluid d-block mx-auto" src="@Url.Content("/img/portfolio/04-full.png")" alt="">
+              <p>
+                  FireByWire Designer is used to draw the layout of firing sites and place sequencers and modules onto it. 
+                  Firing sites, sequencers and modules can all be set so that only fireworks in a certain category (e.g. shells) are assigned to them.
+              </p>
+               <p>
+                   It is built with .Net Framework 4.5
+               </p>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

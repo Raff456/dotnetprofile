@@ -1,0 +1,51 @@
+﻿@model netcoremain.Models.SendMail
+@{
+    ViewBag.Title = "Contact";
+}
+
+<section style="color: #fff; background-color: #0f314c;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header" text-uppercase>My location</h1>       
+      </div>
+      <div class="col-lg-12">
+        <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+        <iframe width="100%" scrolling="no" height="400px" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.949641605967!2d14.378189915434358!3d40.94971197930681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bac09f2f2816d%3A0x243e3e0b818d272f!2sVia+Madonnella%2C+22%2C+80011+Acerra+NA%2C+Italy!5e0!3m2!1sen!2sus!4v1547469361054" marginwidth="0" marginheight="0"></iframe>
+      </div>
+    </div><!-- /.row -->
+    <hr>
+    <div class="row">
+      <div class="col-sm-12">
+        <br><br>
+        <h3>Let's Get In Touch!</h3>
+        
+        @using (Html.BeginForm("Sendmessage", "Contact", FormMethod.Post, new { @id = "form1", @enctype = "multipart/form-data" }))
+        {
+          @Html.ValidationSummary()
+          <div class="row">
+            <div class="form-group col-lg-6">
+              <label for="input1">Name</label>
+              @Html.TextBoxFor(m=>m.FromName, new { @type = "text", @class = "form-control", @placeholder = "Please input your name" })              
+            </div>
+            <div class="form-group col-lg-6">
+              <label for="input2">Email Address</label>
+              @Html.TextBoxFor(m => m.FromEmail, new { @type = "email", @class = "form-control", @placeholder = "Please input your email" })
+            </div>
+            <div class="clearfix"></div>
+            <div class="form-group col-lg-12">
+              <label for="input4">Message</label>
+              @Html.TextAreaFor(m=>m.Body, new { @class="form-control"})              
+            </div>
+            <div class="form-group col-lg-12">
+              <input type="hidden" value="contact" name="save">
+              <button class="btn btn-primary" type="submit">Send message</button>
+            </div>
+          </div>
+        }
+
+      </div>     
+    </div><!-- /.row -->
+  </div>
+</section>
+

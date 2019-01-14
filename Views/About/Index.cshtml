@@ -1,0 +1,117 @@
+﻿@{
+  ViewBag.Title = "About";
+}
+
+<section id="about" style="color: #fff; background-color: #0f314c;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Skill introduce</h2>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" src="@Url.Content("/img/about/1.png")" alt="">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="subheading">ASP.NET | ASP.NET Core</h4>
+              </div>
+              <div class="timeline-body">
+                <p>5+ years experience in C#, ASP.NET(MVC | WebForms | SignalR | WebAPI)</p><br>
+                <p>2 years experience in C#, ASP.NET Core(MVC | WebAPI | SignalR) on Windows, Mac, or Linux.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" src="@Url.Content("/img/about/2.png")" alt="">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="subheading">Angular</h4>
+              </div>
+              <div class="timeline-body">
+                <p>5+ years experience in Angular JS | 2 | 4 | 6, TypeScript and Bootstrap 3 | 4</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" src="@Url.Content("/img/about/3.png")" alt="">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="subheading">Azure and Database</h4>
+              </div>
+              <div class="timeline-body">
+                <p>4 years experience in Microsoft Azure, MSSQL Server 2008 | 2010 | 2014, MySQL, and SQLite</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>
+                My Skills
+                <br>are growing
+                <br>up
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Work experience</h2>
+        <br><br>
+      </div>
+    </div>
+
+    <!-- section-heading end -->
+    <div class="row">
+      <!-- single-skill start -->
+      <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+        <div class="single-skill">
+          <div class="progress-circular">
+            <input type="text" class="knob" value="0" data-rel="95" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+            <h3 class="progress-h4">ASP.NET | ASP.NETCore</h3>
+          </div>
+        </div>
+      </div>
+      <!-- single-skill end -->
+      <!-- single-skill start -->
+      <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+        <div class="single-skill">
+          <div class="progress-circular">
+            <input type="text" class="knob" value="0" data-rel="80" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+            <h3 class="progress-h4">Angular</h3>
+          </div>
+        </div>
+      </div>
+      <!-- single-skill end -->
+      <!-- single-skill start -->
+      <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+        <div class="single-skill">
+          <div class="progress-circular">
+            <input type="text" class="knob" value="0" data-rel="95" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+            <h3 class="progress-h4">Database</h3>
+          </div>
+        </div>
+      </div>
+      <!-- single-skill end -->
+    </div>
+  </div>  
+</section>
+
+<div style="text-align:center">
+  <a class="btn btn-danger navbar-toggler-right" @Html.ActionLink("Portfolio", "OneColumn", "Portfolio")
+</div>
